@@ -33,6 +33,7 @@ def hit?(num)
   if input == 'h'
     num += deal_card
   elsif input == 's'
+    return num
   else
     invalid_command
     hit?(num)
