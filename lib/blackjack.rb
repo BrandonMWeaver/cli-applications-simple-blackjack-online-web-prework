@@ -27,8 +27,18 @@ def initial_round
   display_card_total(deal_card + deal_card)
 end
 
-def hit?
-  # code hit? here
+def hit?(num)
+  prompt_user
+  input = get_user_input
+  if input == 'h'
+    num += deal_card
+  elsif input == 's'
+  else
+    invalid_command
+    hit?(num)
+  end
+  
+  return num
 end
 
 def invalid_command
