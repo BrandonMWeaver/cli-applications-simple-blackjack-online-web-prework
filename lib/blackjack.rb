@@ -50,6 +50,8 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  num = initial_round
+  hit?(num)
 end
     
