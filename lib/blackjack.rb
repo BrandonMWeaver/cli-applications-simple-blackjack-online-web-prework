@@ -10,6 +10,7 @@ end
 
 def display_card_total(num)
   puts "Your cards add up to #{num}"
+  return num
 end
 
 def prompt_user
@@ -26,7 +27,6 @@ end
 
 def initial_round
   display_card_total(deal_card + deal_card)
-  binding.pry
 end
 
 def hit?
