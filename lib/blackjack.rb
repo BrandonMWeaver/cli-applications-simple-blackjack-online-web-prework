@@ -33,7 +33,7 @@ def hit?(num)
   if input == 'h'
     num += deal_card
   elsif input == 's'
-    return num
+    return 's'
   else
     invalid_command
     hit?(num)
@@ -54,7 +54,9 @@ def runner
   welcome
   num = initial_round
   while num <= 21 do
-    hit?(num)
+    if hit?(num) != 's'
+      hit?(num)
+    end
   end
 end
     
