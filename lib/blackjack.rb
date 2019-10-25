@@ -35,7 +35,7 @@ def hit?(num)
   elsif input == 's'
   else
     invalid_command
-    prompt_user
+    hit?(num)
   end
   
   return num
