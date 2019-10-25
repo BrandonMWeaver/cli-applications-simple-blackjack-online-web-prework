@@ -3,7 +3,7 @@ def welcome
 end
 
 def deal_card
-  rand(1..11)
+  return rand(1..11)
 end
 
 def display_card_total(num)
@@ -16,7 +16,7 @@ def prompt_user
 end
 
 def get_user_input
-  gets.chomp
+  return gets.chomp
 end
 
 def end_game(num)
@@ -24,7 +24,7 @@ def end_game(num)
 end
 
 def initial_round
-  display_card_total(deal_card + deal_card)
+  return display_card_total(deal_card + deal_card)
 end
 
 def hit?(num)
